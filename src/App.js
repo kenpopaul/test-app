@@ -5,7 +5,7 @@ function App() {
   const [taskList, SetTaskList] = useState([]);
   return (
     <>
-    <h1>To Do Board</h1>
+    <h1>To Do Board....</h1>
     <Input taskList={taskList} SetTaskList={SetTaskList}/>
     </>
   );
