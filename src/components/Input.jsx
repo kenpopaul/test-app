@@ -1,10 +1,10 @@
 import { useState } from "react"
 
-const Input = ({taskList, setTaskList}) => {
+const Input = ({ taskList, setTaskList }) => {
     const [input, setInput] = useState("")
     
     const handleAddTask = (e) => {
-        e.preventDefault()
+        e.preventDefault();
         setTaskList([...taskList, input]);
     }
 
