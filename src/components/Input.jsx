@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const Input = (taskList, setTaskList) => {
+const Input = ({taskList, setTaskList}) => {
     const [input, setInput] = useState("")
     
     const handleAddTask = (e) => {
@@ -18,7 +18,8 @@ const Input = (taskList, setTaskList) => {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
             />
-            <button onClick={(e) => setInput(e.target.valuie)}>Add</button>
+            <button onClick={handleAddTask}>Add</button>
+
         </form>
         </>
     )

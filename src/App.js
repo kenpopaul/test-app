@@ -3,6 +3,9 @@ import Input from "./components/Input";
 
 function App() {
   const [taskList, SetTaskList] = useState([]);
+
+console.log(taskList);
+
   return (
     <>
     <h1>To Do Board....</h1>
